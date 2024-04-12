@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "DIN";
+    src: url('../font/DIN.ttf');
+    font-weight: normal; /* Default weight for the base font */
+}
+
+@font-face {
+    font-family: "DIN";
+    src: url('../font/DIN-Black.ttf');
+    font-weight: 900; /* Black */
+}
+
+@font-face {
+    font-family: "DIN";
+    src: url('../font/DIN-Bold.ttf');
+    font-weight: 700; /* Bold */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("../img/night sky seamless.jpg");
+
+    font-family: "DIN", sans-serif;
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center; 
+}
+
+.CalculatorMain{
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 10px;
+
+
+    margin: auto;
+}  
+
+.CalculatorGrid {
+    display: grid;
+    grid-template-columns: fit-content;
+    grid-template-rows: 200px 1fr;
+
+    place-items: center;
+    align-items: center;
+    justify-content: center; 
+
+    gap: 10px;
+}
+
+.titleDiv{
+    background-color: rgb(90, 90, 180, 0.5);
+    border: 0px solid black;
+    border-radius: 10px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-family: 'DIN';
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.InputsDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    place-items: center;
+}

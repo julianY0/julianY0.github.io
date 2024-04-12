@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>EHP Calculator</title>
+    
+    <link rel="stylesheet" href="./EHP.css">
+    <script src="EHPCalculator.js"></script>
+
+  </head>
+  <body>
+      <div class="CalculatorMain">
+          <div class="CalculatorGrid">
+            <div class="titleDiv">
+              <p>EHP Calculator for Star Rail</p>
+            </div>
+            <div class="InputsDiv">
+              <!--ROW 1-->
+              <div>
+                <p>Character HP:</p>
+                <input id="inputHP" type="text" value="0">
+              </div>
+              <div>
+                <p>Character DEF:</p>
+                <input id="inputDEF" type="text" value="0">
+              </div>
+
+              <!--ROW 2-->
+              <div>
+                <p>DMG Reduction%:</p>
+                <input id="inputDMGReduction" type="text" value="0">
+              </div>
+
+              <div>
+                <p>DMG RES%:</p>
+                <input id="inputDMGRES" type="text" value="0">
+              </div>
+
+              <!--ROW 3-->
+              <div>
+                <p>DEF Reduction (%)</p>
+                <input id="inputDEFReductionPerc" type="text" value="0">
+              </div>
+
+              <div>
+                <p>DEF Reduction (Flat)</p>
+                <input id="inputDEFReductionFlat" type="text" value="0">
+              </div>
+              
+              <!--ROW 4-->
+              <div>
+                <p>DEF Bonus (%)</p>
+                <input id="inputDEFBonusPerc" type="text" value="0">
+              </div>
+
+              <div>
+                <p>DEF Bonus (Flat)</p>
+                <input id="inputDEFBonusFlat" type="text" value="0">
+              </div>
+
+              <!--ROW 5-->
+              <div style="grid-column: 1/3;">
+                <p>Enemy Level :</p>
+                <p id="EnemyLVLDisplay"></p>
+                <input type="range" min="1" max="95" value="95" class="slider" id="Input_EnemyLVL">
+              </div>
+
+            </div>
+            <!--OUTPUTS-->
+            <div>
+              <div>
+                EHP RESULT:
+                <p id="output">0</p>
+              </div>
+            </div>
+
+            <div>
+              <button onclick="calcEHP()">Calculate</button>
+            </div>
+          </div>
+      </div>
+  </body>
+</html>

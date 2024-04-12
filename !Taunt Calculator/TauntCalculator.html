@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Taunt Probability Calculator</title>
+    
+    <link rel="stylesheet" href="./Taunt.css">
+    <script src="Taunt.js"></script>
+
+  </head>
+  <body>
+      <div class="Main">
+          <div class="Grid">
+            <div class="titleDiv">
+              <p>Taunt Probability for Star Rail</p>
+            </div>
+            <div class="InputsDiv">
+              <!--ROW 1-->
+              <div>
+                <p>Character 1:</p>
+                <select id="teammate1">
+                    <option value="NONE">NONE</option>
+                    <option value="The Hunt">The Hunt</option>
+                    <option value="The Erudition">The Erudition</option>
+                    <option value="The Harmony">The Harmony</option>
+                    <option value="The Nihility">The Nihility</option>
+                    <option value="The Abundance">The Abundance</option>
+                    <option value="The Destruction">The Destruction</option>
+                    <option value="The Preservation">The Preservation</option>
+                </select>
+              </div>
+
+              <div>
+                <p>Character 2:</p>
+                <select id="teammate2">
+                    <option value="NONE">NONE</option>
+                    <option value="The Hunt">The Hunt</option>
+                    <option value="The Erudition">The Erudition</option>
+                    <option value="The Harmony">The Harmony</option>
+                    <option value="The Nihility">The Nihility</option>
+                    <option value="The Abundance">The Abundance</option>
+                    <option value="The Destruction">The Destruction</option>
+                    <option value="The Preservation">The Preservation</option>
+                </select>
+              </div>
+
+              <div>
+                <p>Character 3:</p>
+                <select id="teammate3">
+                    <option value="NONE">NONE</option>
+                    <option value="The Hunt">The Hunt</option>
+                    <option value="The Erudition">The Erudition</option>
+                    <option value="The Harmony">The Harmony</option>
+                    <option value="The Nihility">The Nihility</option>
+                    <option value="The Abundance">The Abundance</option>
+                    <option value="The Destruction">The Destruction</option>
+                    <option value="The Preservation">The Preservation</option>
+                </select>
+              </div>
+
+              <div>
+                <p>Character 4:</p>
+                <select id="teammate4">
+                    <option value="NONE">NONE</option>
+                    <option value="The Hunt">The Hunt</option>
+                    <option value="The Erudition">The Erudition</option>
+                    <option value="The Harmony">The Harmony</option>
+                    <option value="The Nihility">The Nihility</option>
+                    <option value="The Abundance">The Abundance</option>
+                    <option value="The Destruction">The Destruction</option>
+                    <option value="The Preservation">The Preservation</option>
+                </select>
+              </div>
+
+              <!--ROW 2-->
+              <div>
+                <p>Base Aggro Modifier:</p>
+                <input id="teammate1BaseAggro" type="number" value="0">
+              </div>
+
+              <div>
+                <p>Base Aggro Modifier:</p>
+                <input id="teammate2BaseAggro" type="number" value="0">
+              </div>
+
+              <div>
+                <p>Base Aggro Modifier:</p>
+                <input id="teammate3BaseAggro" type="number" value="0">
+              </div>
+
+              <div>
+                <p>Base Aggro Modifier:</p>
+                <input id="teammate4BaseAggro" type="number" value="0">
+              </div>
+
+              <!--ROW 3-->
+              <div>
+                <p>Normal Aggro Modifier:</p>
+                <input id="teammate1NormalAggro" type="number" value="0">
+              </div>
+
+              <div>
+                <p>Normal Aggro Modifier:</p>
+                <input id="teammate2NormalAggro" type="number" value="0">
+              </div>
+
+              <div>
+                <p>Normal Aggro Modifier:</p>
+                <input id="teammate3NormalAggro" type="number" value="0">
+              </div>
+
+              <div>
+                <p>Normal Aggro Modifier:</p>
+                <input id="teammate4NormalAggro" type="number" value="0">
+              </div>
+
+              <!--ROW 4-->
+              <div>
+                <p>Character 1:</p>
+                <p id="output1">0%</p>
+              </div>
+
+              <div>
+                <p>Character 2:</p>
+                <p id="output2">0%</p>
+              </div>
+
+              <div>
+                <p>Character 3:</p>
+                <p id="output3">0%</p>
+              </div>
+
+              <div>
+                <p>Character 4:</p>
+                <p id="output4">0%</p>
+              </div>
+            </div>
+            <div>
+              <button onclick="calcTaunt()">Calculate</button>
+            </div>
+          </div>
+      </div>
+  </body>
+</html>
